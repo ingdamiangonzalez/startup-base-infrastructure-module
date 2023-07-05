@@ -3,7 +3,7 @@
 /*----------------------------------------------------------------------*/
 module "vpc" {
   source               = "terraform-aws-modules/vpc/aws"
-  version              = "~>2.0"
+  version              = "~>5.0.0"
   name                 = local.common_name
   cidr                 = var.vpc_cidr
   azs                  = ["${var.aws_region}a", "${var.aws_region}b", "${var.aws_region}c"]
